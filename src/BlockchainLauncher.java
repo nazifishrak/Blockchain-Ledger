@@ -13,7 +13,7 @@ public class BlockchainLauncher {
 
             in = new Scanner(System.in);
             System.out.println("Enter transaction or press q to quit: ");
-            transaction = in.next();
+            transaction = in.nextLine();
             bc.addBlock(transaction);
 
             if (Objects.equals(transaction, "q")) {

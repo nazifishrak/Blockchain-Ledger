@@ -14,6 +14,6 @@ public class Blockchain {
     }
 
     public void addBlock(String b) {
-        blockchain.add(new Block(blockchain.get(blockchain.size()-1).prevHash ,b));
+        blockchain.add(new Block(blockchain.get(blockchain.size()-1).hash ,b));
     }
 }
